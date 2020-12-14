@@ -1,0 +1,152 @@
+.container {
+  border: 2px solid #f4fa61;
+  box-shadow: 0px 0px 15px;
+  border-radius: 10px;
+  padding: 30px;
+  min-height: 570px;
+}
+
+.inputs-root {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inputs {
+  width: 90%;
+  /* Full width */
+  display: block;
+  padding: 12px;
+  /* Some padding */
+  border-radius: 20px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s;
+  text-align: center;
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 30px;
+  /* Bottom margin */
+}
+
+.inputs:focus {
+  border: 2px solid #3ee9b6;
+  box-shadow: 0px 0px 10px #3ee9b6;
+}
+
+.inputsFromTo {
+  width: 100%;
+}
+
+.inputsFrom {
+  width: 45%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border-radius: 20px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  outline: none;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.inputsTo {
+  width: 45%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border-radius: 20px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  outline: none;
+  margin-left: 5px;
+  transition: 0.5s;
+  text-align: center;
+}
+.inputsFrom:focus {
+  border: 2px solid #3ee9b6;
+  box-shadow: 0px 0px 10px #3ee9b6;
+}
+.inputsTo:focus {
+  border: 2px solid #3ee9b6;
+  box-shadow: 0px 0px 10px #3ee9b6;
+}
+
+.type {
+  width: 90%;
+  /* Full width */
+  display: block;
+  padding: 12px;
+  /* Some padding */
+  border-radius: 20px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s;
+  text-align: center;
+  margin-top: 6px;
+  /* Add a top margin */
+
+}
+.report {
+  text-align: left;
+}
+.reportLabel{
+  font-size: 4;
+}
+
+.comment {
+  width: 100%;
+  /* Full width */
+  display: block;
+  padding: 12px;
+  /* Some padding */
+  border-radius: 20px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s;
+  text-align: left;
+  margin-top: 30px;
+  /* Add a top margin */
+  margin-bottom: 30px;
+  /* Bottom margin */
+}
+.type-pr{
+  font-size: 20px;
+  padding-top: 15px;
+}
+.moreButton{
+  padding: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  font-size: 20px;
+  color: #00fbcd;
+  text-align: left;
+  
+}
+.moreIcon{
+  cursor: pointer;
+
+}
+.report-style{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  font-size: 20px;
+  text-align: left;
+  padding: 1%;
+}
