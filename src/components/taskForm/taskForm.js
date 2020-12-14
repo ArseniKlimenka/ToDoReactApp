@@ -26,9 +26,7 @@ export default class TaskCreationForm extends React.Component {
     }
 
     render() {
-        const { data, handler, submit } = this.props
-        console.log('th', this.state);
-
+        const { data, handler, submit,checkboxHandler } = this.props
         return (
             <form className='container'>
                 <input
@@ -136,7 +134,7 @@ export default class TaskCreationForm extends React.Component {
                                         name="report"
                                         type="checkbox"
                                         checked={data.report}
-                                        onChange={handler} />
+                                        onChange={checkboxHandler} />
                                 </label>
 
                             </div>
