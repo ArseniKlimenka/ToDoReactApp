@@ -16,8 +16,7 @@ export default function TaskCard({
             default:
                 return 'priority-style-medium'
         }
-    }
-    console.log('data', data);
+    }   
     return (
 
         <div className='root-card'>

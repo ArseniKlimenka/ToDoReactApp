@@ -1,12 +1,6 @@
 import "./button.css";
 
 export default function ButtonElement({
-    key = '',
-    disabled = false,
-    color = '',
-    style = {},
-    variant = '',
-    size = '',
     onClick = () => { },
     id = '',
     content='+'
