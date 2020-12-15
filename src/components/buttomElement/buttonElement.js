@@ -3,7 +3,7 @@ import "./button.css";
 export default function ButtonElement({
     onClick = () => { },
     id = '',
-    content='+'
+    content = '+'
 }) {
 
     // Default styling work ib progress
@@ -15,6 +15,6 @@ export default function ButtonElement({
                 onClick={onClick}
             >
                 {content}
-      </span>
+            </span>
         </div>);
 }

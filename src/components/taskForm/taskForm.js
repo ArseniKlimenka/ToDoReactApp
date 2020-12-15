@@ -11,7 +11,7 @@ export default class TaskCreationForm extends React.Component {
         }
     }
     isFormValid = () => {
-        const { firstName, lastName,fromName,toName,email,type,taskName } = this.props.data
+        const { firstName, lastName, fromName, toName, email, type, taskName } = this.props.data
         if (firstName && lastName && fromName && toName && email && type && taskName) {
             return 'rootFilled'
         } else {
@@ -26,9 +26,11 @@ export default class TaskCreationForm extends React.Component {
     }
 
     render() {
-        const { data, handler, submit,checkboxHandler } = this.props
+        const { data, handler, submit, checkboxHandler, close } = this.props
         return (
+
             <form className='container'>
+                <div className="close-button"><span onClick={close} className='cross'>✕</span></div>
                 <input
                     type='text'
                     value={data.taskName}
@@ -91,7 +93,7 @@ export default class TaskCreationForm extends React.Component {
 
                 <div className='type-pr'>
                     <label >Type</label>
-                    <select className='type' id="type" name="type" onChange={handler} defaultValue="" >
+                    <select className='type' id="type" name="type" onChange={handler} defaultValue={data.type} >
                         <option disabled={true} value="">Select type of the task</option>
                         <option value="IT">IT</option>
                         <option value="Design">Design</option>

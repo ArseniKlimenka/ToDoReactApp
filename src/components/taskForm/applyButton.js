@@ -3,9 +3,9 @@ import "./applyButton.css";
 export default function ApplyButton({
     onClick = () => { },
     id = '',
-    content='Apply',
-    disabled=false,
-    className='rootNotFilled'
+    content = 'Apply',
+    disabled = false,
+    className = 'rootNotFilled'
 }) {
 
     // Default styling work ib progress
@@ -14,10 +14,10 @@ export default function ApplyButton({
         <div className={className} onClick={onClick}>
             <span className={'applyButton'}
                 id={id}
-               
+
                 disabled={disabled}
             >
                 {content}
-      </span>
+            </span>
         </div>);
 }

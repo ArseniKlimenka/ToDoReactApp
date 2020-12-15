@@ -1,14 +1,16 @@
 .App {
   text-align: center;
   background-color: #282c34;
-}
-
-.App-header {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+  min-height: 100vh;
   color: white;
+}
+
+
+.open-modal{
+  position: relative;
+  left: 40%;
 }

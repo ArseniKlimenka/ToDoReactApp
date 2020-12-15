@@ -3,7 +3,9 @@ export default function TaskCard({
     onClick = () => { },
     id = '',
     content = '+',
-    data = {}
+    data = {},
+    deleteButton=()=>{},
+    editButton=()=>{},
 }) {
     const getPriority = (priority) => {
         switch (priority) {
@@ -16,14 +18,15 @@ export default function TaskCard({
             default:
                 return 'priority-style-medium'
         }
-    }   
-    return (
+    }
+
+       return (
 
         <div className='root-card'>
 
             <div className='header-line'>
                 <div className='header-type'>
-                    <span className='type-style' >{data.item.type}</span>
+                    <span  >{data.item.type}</span>
                 </div>
                 <div className={getPriority(data.item.priority)}>
                     <span  >{data.item.priority}</span>
@@ -34,7 +37,8 @@ export default function TaskCard({
                 <span>{data.item.taskName}</span>
             </div>
             <div className='buttons-card'>
-                <span>buttons</span>
+                <span className='delete-button' onClick={()=>deleteButton(data.id)}>DELETE</span>
+                <span className='edit-button' onClick={()=>editButton(data.id)}>EDIT</span>
             </div>
 
             <div className='comment-card-root'>
@@ -50,7 +54,7 @@ export default function TaskCard({
                 </div>
 
             </div>
-            <div className='task-priority'>          
+            <div className='task-priority'>
             </div>
         </div>);
 }

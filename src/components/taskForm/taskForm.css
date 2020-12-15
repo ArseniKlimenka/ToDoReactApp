@@ -11,6 +11,19 @@
   margin-right: auto;
 }
 
+.close-button {
+  text-align: right;
+  font-weight: bolder;
+  position: relative;
+  left: 3%;
+  margin-top: -5%;
+  margin-bottom: 4%;
+}
+
+.cross {
+  cursor: pointer;
+}
+
 .inputs {
   width: 90%;
   /* Full width */
@@ -69,10 +82,12 @@
   transition: 0.5s;
   text-align: center;
 }
+
 .inputsFrom:focus {
   border: 2px solid #3ee9b6;
   box-shadow: 0px 0px 10px #3ee9b6;
 }
+
 .inputsTo:focus {
   border: 2px solid #3ee9b6;
   box-shadow: 0px 0px 10px #3ee9b6;
@@ -95,12 +110,13 @@
   text-align: center;
   margin-top: 6px;
   /* Add a top margin */
-
 }
+
 .report {
   text-align: left;
 }
-.reportLabel{
+
+.reportLabel {
   font-size: 4;
 }
 
@@ -124,11 +140,13 @@
   margin-bottom: 30px;
   /* Bottom margin */
 }
-.type-pr{
+
+.type-pr {
   font-size: 20px;
   padding-top: 15px;
 }
-.moreButton{
+
+.moreButton {
   padding: 5%;
   margin-left: auto;
   margin-right: auto;
@@ -136,13 +154,13 @@
   font-size: 20px;
   color: #00fbcd;
   text-align: left;
-  
 }
-.moreIcon{
-  cursor: pointer;
 
+.moreIcon {
+  cursor: pointer;
 }
-.report-style{
+
+.report-style {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
